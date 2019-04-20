@@ -203,7 +203,7 @@ The benefit is quite simple: it gives you full control over which files you want
 25. Developer fixes a bug. How do you take the change to 
     production?
 
-   -1. create hot-fix branch from Release-branch and fix the bug in the hot-fix branch and test hot-fix branch on all enviorments if it's fine then deploy this branch into the productione 
+   -1. create hot-fix branch from Release-branch and fix the bug in the hot-fix branch and test hot-fix branch on all enviorments if it's fine then deploy this branch into the production
   2. Then merge the hot-fix branch into master branch.
 
 

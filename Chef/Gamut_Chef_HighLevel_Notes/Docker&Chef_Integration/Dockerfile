@@ -6,10 +6,10 @@ RUN apt-get install -y openssh-server
 RUN apt-get install -y vim
 RUN apt-get install -y net-tools
 RUN apt-get install sudo
-RUN useradd -m -d /home/sai -s /bin/bash sai
-RUN echo "sai:sai" | chpasswd
-RUN sed -i '21i sai    ALL=(ALL:ALL) ALL' /etc/sudoers
-USER sai
-WORKDIR /home/sai
-ENTRYPOINT echo sai | sudo -S service ssh start && /bin/bash
+RUN useradd -m -d /home/shiva -s /bin/bash shiva
+RUN echo "shiva:shiva" | chpasswd
+RUN sed -i '21i shiva    ALL=(ALL:ALL) ALL' /etc/sudoers
+USER shiva
+WORKDIR /home/shiva
+ENTRYPOINT echo shiva | sudo -S service ssh start && /bin/bash
 
